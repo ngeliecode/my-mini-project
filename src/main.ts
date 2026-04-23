@@ -1,4 +1,4 @@
 import "./styles/main.scss";
-import { init } from "./first";
+import { showSecondPage } from "./first";
 
-init();
+showSecondPage();
