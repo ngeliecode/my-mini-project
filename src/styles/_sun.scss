@@ -15,9 +15,12 @@
   z-index: 1;
 
   // animation
-  transition: bottom 2s ease-in-out;
+  transition:
+    bottom 2s ease-in-out,
+    box-shadow 2s ease-in-out;
 }
 
 .sun.rise {
   bottom: 50px;
+  box-shadow: 0 0 80px rgba(255, 220, 150, 0.5);
 }

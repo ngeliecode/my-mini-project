@@ -2,10 +2,11 @@
 @use "./mountains";
 @use "./trees";
 @use "./sun";
+@use "./sky";
 
 :root {
   --text: #fff;
-  --bg: linear-gradient(180deg, rgb(18, 7, 74) 37%, rgb(32, 70, 194) 100%);
+  //--bg: linear-gradient(180deg, rgb(18, 7, 74) 37%, rgb(32, 70, 194) 100%);
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
@@ -13,14 +14,13 @@
   --accent-border: rgba(170, 59, 255, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
   --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   letter-spacing: 0.18px;
   color: var(--text);
-  background: var(--bg);
+  //background: var(--bg);
   font-synthesis: none;
 
   @media (max-width: 1024px) {

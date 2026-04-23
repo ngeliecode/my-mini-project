@@ -1,0 +1,39 @@
+.sky {
+  position: fixed;
+  inset: 0; // täcker hela skärmen
+  z-index: -1;
+}
+
+.sky-night,
+.sky-morning {
+  position: absolute;
+  inset: 0;
+  transition: opacity 5s ease;
+}
+
+.sky-night {
+  background: linear-gradient(
+    180deg,
+    rgb(18, 7, 74) 37%,
+    rgb(32, 70, 194) 100%
+  );
+  opacity: 1;
+}
+
+.sky-morning {
+  background: linear-gradient(
+    180deg,
+    rgb(0, 79, 251) 37%,
+    rgb(229, 245, 255) 100%
+  );
+  opacity: 0;
+}
+
+/* När du klickar */
+.sky.morning .sky-morning {
+  opacity: 1;
+}
+
+.sky.morning .sky-night {
+  opacity: 0;
+}
