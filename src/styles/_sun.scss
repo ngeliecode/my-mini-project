@@ -1,0 +1,23 @@
+.sun {
+  position: absolute;
+
+  /* helt gömd */
+  bottom: -100px;
+
+  /* mitten */
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 200px;
+  height: 200px;
+  background: #acab90;
+  border-radius: 50%;
+  z-index: 1;
+
+  // animation
+  transition: bottom 2s ease-in-out;
+}
+
+.sun.rise {
+  bottom: 50px;
+}
