@@ -8,7 +8,7 @@
 .sky-morning {
   position: absolute;
   inset: 0;
-  transition: opacity 5s ease;
+  transition: opacity 2s ease;
 }
 
 .sky-night {
@@ -23,8 +23,8 @@
 .sky-morning {
   background: linear-gradient(
     180deg,
-    rgb(0, 79, 251) 37%,
-    rgb(229, 245, 255) 100%
+    rgb(36, 15, 139) 37%,
+    rgb(193, 169, 124) 100%
   );
   opacity: 0;
 }
@@ -35,5 +35,5 @@
 }
 
 .sky.morning .sky-night {
-  opacity: 0;
+  opacity: 1;
 }

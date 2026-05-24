@@ -3,6 +3,7 @@ export function showSecondPage() {
 
   const sun = document.querySelector(".sun") as HTMLDivElement;
   const sky = document.querySelector(".sky") as HTMLDivElement;
+  const stars = document.querySelector(".stars") as HTMLDivElement;
 
   const firstPage = document.querySelector("#firstPage") as HTMLElement;
   const secondPage = document.querySelector("#secondPage") as HTMLElement;
@@ -14,6 +15,7 @@ export function showSecondPage() {
       // animation
       sun.classList.add("rise");
       sky.classList.add("morning");
+      stars.classList.add("fade");
 
       setTimeout(() => {
         firstPage.classList.add("hidden");
